@@ -1,0 +1,435 @@
+{
+  "config": {
+    "forbidOnly": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/areebaruhaan/Desktop/miro/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "name": "",
+        "testDir": "/Users/areebaruhaan/Desktop/miro/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "signup.spec.ts"
+        ],
+        "timeout": 300000
+      }
+    ],
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "/Users/areebaruhaan/Desktop/miro/node_modules/allure-playwright/dist/index.js",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "rootDir": "/Users/areebaruhaan/Desktop/miro/tests",
+    "quiet": false,
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.18.1",
+    "workers": 1,
+    "webServer": null,
+    "__testGroupsCount": 1
+  },
+  "suites": [
+    {
+      "title": "signup.spec.ts",
+      "file": "signup.spec.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [
+        {
+          "title": "Sign up Happy Flow",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 25230,
+                  "stdout": [
+                    {
+                      "text": "---------------------------------\n"
+                    },
+                    {
+                      "text": "Happy Flow Verification\n"
+                    },
+                    {
+                      "text": "---------------------------------\n"
+                    },
+                    {
+                      "text": "Name: john doe\n"
+                    },
+                    {
+                      "text": "New email: JX0f0@yahoo.com\n"
+                    },
+                    {
+                      "text": "Password: adsdddhjkl\n"
+                    },
+                    {
+                      "text": "Terms of service page verified\n"
+                    },
+                    {
+                      "text": "Privacy policy page verified\n"
+                    },
+                    {
+                      "text": "Privacy policy and terms check marked\n"
+                    },
+                    {
+                      "text": "Success Message: Check your email\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/areebaruhaan/Desktop/miro/test-results/signup-Sign-up-Happy-Flow/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "signup.spec.ts",
+          "line": 18,
+          "column": 5
+        },
+        {
+          "title": "Sign up Alt Flow - empty field check",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 13962,
+                  "stdout": [
+                    {
+                      "text": "---------------------------------\n"
+                    },
+                    {
+                      "text": "Empty Fields Verification\n"
+                    },
+                    {
+                      "text": "---------------------------------\n"
+                    },
+                    {
+                      "text": "Error Message: Please enter your name.\n"
+                    },
+                    {
+                      "text": "Error Message: Enter your email address.\n"
+                    },
+                    {
+                      "text": "Error Message: Enter your password.\n\t\t\t\n"
+                    },
+                    {
+                      "text": "Error Message: Please agree with the Terms to sign up.\n"
+                    },
+                    {
+                      "text": "Name added: john doe\n"
+                    },
+                    {
+                      "text": "New email: EXep1@yahoo.com\n"
+                    },
+                    {
+                      "text": "Password added: adsdddhjkl\n"
+                    },
+                    {
+                      "text": "Privacy check marked\n"
+                    },
+                    {
+                      "text": "Success Message: Check your email\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/areebaruhaan/Desktop/miro/test-results/signup-Sign-up-Alt-Flow---empty-field-check/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "signup.spec.ts",
+          "line": 30,
+          "column": 5
+        },
+        {
+          "title": "Sign up Alt Flow - email verification",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 20319,
+                  "stdout": [
+                    {
+                      "text": "---------------------------------\n"
+                    },
+                    {
+                      "text": "Email Already In Use Verification\n"
+                    },
+                    {
+                      "text": "---------------------------------\n"
+                    },
+                    {
+                      "text": "Old email: JX0f0@yahoo.com\n"
+                    },
+                    {
+                      "text": "Error Message: Sorry, this email is already registered\n"
+                    },
+                    {
+                      "text": "Incorrect email: john.doe\n"
+                    },
+                    {
+                      "text": "Error Message: Enter a valid email address.\n"
+                    },
+                    {
+                      "text": "Incorrect email: john.doe@\n"
+                    },
+                    {
+                      "text": "Error Message: Enter a valid email address.\n"
+                    },
+                    {
+                      "text": "New email: HBju2@yahoo.com\n"
+                    },
+                    {
+                      "text": "Success Message: Check your email\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/areebaruhaan/Desktop/miro/test-results/signup-Sign-up-Alt-Flow---email-verification/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "signup.spec.ts",
+          "line": 41,
+          "column": 5
+        },
+        {
+          "title": "Sign up Alt Flow - password character check",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 19071,
+                  "stdout": [
+                    {
+                      "text": "---------------------------------\n"
+                    },
+                    {
+                      "text": "Password character Count Verification\n"
+                    },
+                    {
+                      "text": "---------------------------------\n"
+                    },
+                    {
+                      "text": "New email: Ylur3@yahoo.com\n"
+                    },
+                    {
+                      "text": "Password hint for 1 characters: Please use 8+ characters for secure password.\n"
+                    },
+                    {
+                      "text": "Password hint for 2 characters: Please use 8+ characters for secure password.\n"
+                    },
+                    {
+                      "text": "Password hint for 3 characters: Please use 8+ characters for secure password.\n"
+                    },
+                    {
+                      "text": "Password hint for 4 characters: Please use 8+ characters for secure password.\n"
+                    },
+                    {
+                      "text": "Password hint for 5 characters: Please use 8+ characters for secure password.\n"
+                    },
+                    {
+                      "text": "Password hint for 6 characters: Please use 8+ characters for secure password.\n"
+                    },
+                    {
+                      "text": "Password hint for 7 characters: Please use 8+ characters for secure password.\n"
+                    },
+                    {
+                      "text": "Password hint for 8 characters: Weak password\n"
+                    },
+                    {
+                      "text": "Password hint for 9 characters: Weak password\n"
+                    },
+                    {
+                      "text": "Password hint for 10 characters: Weak password\n"
+                    },
+                    {
+                      "text": "Success Message: Check your email\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/areebaruhaan/Desktop/miro/test-results/signup-Sign-up-Alt-Flow---password-character-check/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "signup.spec.ts",
+          "line": 51,
+          "column": 5
+        },
+        {
+          "title": "Sign up Alt Flow - Sign up with 3rd party",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 300000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 58523,
+                  "stdout": [
+                    {
+                      "text": "---------------------------------\n"
+                    },
+                    {
+                      "text": "3rd Party Login Verification\n"
+                    },
+                    {
+                      "text": "---------------------------------\n"
+                    },
+                    {
+                      "text": "Signup with Google Verification\n"
+                    },
+                    {
+                      "text": "Success Message: Sign in with Google\n"
+                    },
+                    {
+                      "text": "---------------------------------\n"
+                    },
+                    {
+                      "text": "Signup with Slack Verification\n"
+                    },
+                    {
+                      "text": "Success Message: Sign in to your workspace\n"
+                    },
+                    {
+                      "text": "---------------------------------\n"
+                    },
+                    {
+                      "text": "Signup with Facebook Verification\n"
+                    },
+                    {
+                      "text": "Success Message: Log in to Facebook\n"
+                    },
+                    {
+                      "text": "---------------------------------\n"
+                    },
+                    {
+                      "text": "Signup with Microsoft Office Verification\n"
+                    },
+                    {
+                      "text": "Success Message: Sign-in options\n"
+                    },
+                    {
+                      "text": "---------------------------------\n"
+                    },
+                    {
+                      "text": "Signup with Apple Verification\n"
+                    },
+                    {
+                      "text": "Success Message: Use your Apple ID to sign in to Miro.\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/areebaruhaan/Desktop/miro/test-results/signup-Sign-up-Alt-Flow---Sign-up-with-3rd-party/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "signup.spec.ts",
+          "line": 61,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
